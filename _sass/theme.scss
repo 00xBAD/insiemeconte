@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+// -------- IMPORTS -------- //
+@use "sass:color";
+@import "theme/fonts";
+
+// -------- VARIABLES -------- //
+$spacing-unit: 64px;
+$nav-height: 160px;
+$content-width: 1366px;
+$page-width: 60%;
+
+// -------- COLORS -------- //
+$white: #F0F0FF;
+$dark: #352F6C;
+$light-cyan: #6CB0ED;
+
+$black: #000;
+
+.white {
+  color: $white;
+}
+
+.black {
+  color: $dark;
+}
+
+.black {
+ color: $black;
+}
+
+.dark-inverted {
+  color: $white;
+  background-color: $dark;
+}
+
+.black-inverted {
+  color: $white;
+  background-color: $black;
+}
+
+// -------- ROOT FIXES -------- //
+
+:root {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// -------- MAIN LAYOUT -------- //
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+// -------- GRID LAYOUT -------- //
+
+.container {
+  width: $page-width;
+  display: grid;
+  height: auto;
+  grid-gap: calc($spacing-unit / 2);
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.full {
+  grid-template-columns: 100%;
+}
+
+.half {
+  grid-template-columns: 50% 50%;
+}
+
+.quarter {
+  grid-template-columns: 50% 50% 50% 50%;
+}
+
+.col-1 {
+  grid-column: 1;
+}
+
+.col-2 {
+  grid-column: 2;
+}
+
+.heading {
+  grid-row: 1;
+}
+
+.row-1 {
+  grid-row: 1;
+}
+
+.row-2 {
+  grid-row: 2;
+}
+
+.center-align {
+  justify-self: center;
+}
+
+.text-center-align {
+  text-align: center;
+}
+
+// -------- GENERAL CLASSES -------- //
+
+.padding-16 {
+  padding: 16px;
+}
+
+.border-radius-16 {
+  border-radius: 16px;
+}
+
+// -------- HEADER AND NAVIGATION -------- //
+
+header {
+  width: 100%;
+  height: $nav-height;
+  position: relative;
+  background-color: $white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+header .logotype {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+nav .nav-item {
+  font-size: 1.4em;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 5px solid transparent;
+  transition: all 0.1s linear;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav .nav-item:hover {
+  border-bottom: 5px solid color.adjust($black, $lightness: 10%);
+}
+
+// -------- SECTIONS -------- //
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  font-size: 1.2em;
+}
+
+section h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+section p {
+  text-align: justify;
+}
+
+section .section-img {
+  width: 100%;
+  height: auto;
+  max-width: 587px;
+  align-self: center;
+}
+
+@mixin section-type($bg-image) {
+  background-image: url($bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 800px; // Default height for sections
+  padding: $spacing-unit; // Default padding for sections
+  box-sizing: border-box;
+}
+
+.section-type-a {
+  @include section-type("../_assets/png/section-background-a.png");
+}
+
+.section-type-b {
+  @include section-type("../_assets/png/section-background-b.png");
+}
+
+// -------- SERVICES SECTION -------- //
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 16px;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: 64px auto;
+}
+
+.service-container .service-icon {
+  width: 46px;
+  height: 46px;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.service-container .service-heading {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+// -------- SPECIAL SECTIONS -------- //
+.hero-landing-img {
+  width: 100%;
+  height: auto;
+}
+
+.section-h1 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.section-h2 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.brush-separator {
+  width: 600px;
+  height: auto;
+}
+
+// -------- FOOTER -------- //
+
+.footer-logo {
+  margin-top: calc($spacing-unit / 2);
+  margin-bottom: calc($spacing-unit / 2);
+  max-width: 542px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  color: $black;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.footer-link-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: calc($spacing-unit / 4);
+  justify-content: center;
+  margin-top: $spacing-unit;
+}
+
+// -------- PAGES -------- //
+
+.container.page {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: $spacing-unit;
+  background-image: url("../_assets/png/butterfly-bg.png");
+  background-position: center;
+}
+
+.col-mid.page {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.about-us.page,
+.services.page,
+.projects.page,
+.donation.page {
+  background-image: linear-gradient(180deg, $white, $light-cyan);
+}
+
+.legal.page {
+ background-image: linear-gradient(180deg, $white, $white);
+}
+
+.img.page {
+  width: 50%;
+  height: auto;
+  align-self: center;
+}
+
+.services.page p {
+  text-align: left !important;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin-top: calc($spacing-unit / 2);
+  margin-bottom: calc($spacing-unit / 2);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+// CTA //
+
+.cta-center-text-big  {
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.cta-center-text {
+  font-size: 1em;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.map {
+  border: 3px solid $black !important;
+}
+
+
+// ---- MOBILE STYLES ---- //
+@import "theme/mobile";

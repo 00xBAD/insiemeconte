@@ -1,0 +1,41 @@
+<section class="footer section-type-a">
+    <div class="container full">
+
+        <img src="{{ site.url }}/_assets/png/logotype-flat-black.png" class="footer-logo row-1">
+
+        <div class="container half row-2 max-width">
+            <span class="section-h1 atma-semibold black row-1 col-1">Link Utili</span>
+            <div class="footer-links col-1">
+                {% for item in site.data.nav %}
+                <a href="{{ item.url }}">
+                    <div class="footer-link poppins-light">
+                        <div class="footer-link-icon"><i class="fa-solid {{ item.icon }}"></i></div>
+                        <div class="footer-link-text">{{ item.title }}</div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+
+            <span class="section-h1 atma-semibold black row-1 col-2">Contatti</span>
+            
+            <div class="footer-links col-2">
+                {% for item in site.data.contacts %}
+                <a href="{{ item.url }}">
+                    <div class="footer-link poppins-light">
+                        <div class="footer-link-icon"><i class="fa-solid {{ item.icon }}"></i></div>
+                        <div class="footer-link-text">{{ item.text }}</div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            
+            <div class="social-icons col-2">
+                {% for item in site.data.social %}
+                <a href="{{ item.url }}" target="_blank"><img
+                        src="{{ site.url }}/_assets/png/{{ item.title }}-circle.png" class="social-icon footer"></a>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</section>

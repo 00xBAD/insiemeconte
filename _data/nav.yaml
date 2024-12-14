@@ -1,0 +1,12 @@
+- title: Chi Siamo
+  url: \#chi-siamo
+  icon: fa-circle-info
+- title: Servizi
+  url: \#servizi
+  icon: fa-hand-holding-heart
+- title: Progetti
+  url: \#progetti
+  icon: fa-gear
+- title: Sostienici
+  url: \#sostienici
+  icon: fa-hand-holding-usd

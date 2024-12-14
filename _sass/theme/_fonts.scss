@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Mixin for Poppins Font
+@mixin poppins-font($weight, $style: normal) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// Mixin for Atma Font
+@mixin atma-font($weight, $style: normal) {
+  font-family: "Atma", system-ui;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// Poppins Font
+.poppins-thin {
+  @include poppins-font(100);
+}
+
+.poppins-extralight {
+  @include poppins-font(200);
+}
+
+.poppins-light {
+  @include poppins-font(300);
+}
+
+.poppins-regular {
+  @include poppins-font(400);
+}
+
+.poppins-medium {
+  @include poppins-font(500);
+}
+
+.poppins-semibold {
+  @include poppins-font(600);
+}
+
+.poppins-bold {
+  @include poppins-font(700);
+}
+
+.poppins-extrabold {
+  @include poppins-font(800);
+}
+
+.poppins-black {
+  @include poppins-font(900);
+}
+
+.poppins-thin-italic {
+  @include poppins-font(100, italic);
+}
+
+.poppins-extralight-italic {
+  @include poppins-font(200, italic);
+}
+
+.poppins-light-italic {
+  @include poppins-font(300, italic);
+}
+
+.poppins-regular-italic {
+  @include poppins-font(400, italic);
+}
+
+.poppins-medium-italic {
+  @include poppins-font(500, italic);
+}
+
+.poppins-semibold-italic {
+  @include poppins-font(600, italic);
+}
+
+.poppins-bold-italic {
+  @include poppins-font(700, italic);
+}
+
+.poppins-extrabold-italic {
+  @include poppins-font(800, italic);
+}
+
+.poppins-black-italic {
+  @include poppins-font(900, italic);
+}
+
+// Atma Font
+.atma-light {
+  @include atma-font(300);
+}
+
+.atma-regular {
+  @include atma-font(400);
+}
+
+.atma-medium {
+  @include atma-font(500);
+}
+
+.atma-semibold {
+  @include atma-font(600);
+}
+
+.atma-bold {
+  @include atma-font(700);
+}

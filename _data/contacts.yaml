@@ -1,0 +1,13 @@
+# Contact information
+- title: address
+  text: Viale Adriatico, 1 00141 - Roma
+  url: https://maps.app.goo.gl/kbm6uFPDqCzUTrzd7
+  icon: fa-location-dot
+- title: email
+  text: info@insiemeconte.org
+  url: mailto:info@insiemeconte.org
+  icon: fa-envelope
+- title: mobile
+  text: +39 06 855 2925
+  url: tel:+39068552925
+  icon: fa-phone

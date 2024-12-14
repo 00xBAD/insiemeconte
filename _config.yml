@@ -1,0 +1,32 @@
+title: Insieme con Te - ODV
+email: info@insiemeconte.org
+description: >-
+  "Insieme con te" è un'associazione di volontariato attiva dal 2004, che offre supporto a persone con disagi psichici, psicologici e sociali.
+  Specializzata in servizi come gruppi di Auto Mutuo Aiuto (A.M.A.), psicoterapia, counseling, sostegno allo studio e assistenza per DSA, l'associazione fornisce anche sostegno ai pazienti ricoverati nei reparti psichiatrici e assistenza domiciliare con il "Compagno Adulto".
+  Il nostro obiettivo è migliorare la qualità della vita attraverso l'ascolto, l'empatia e l'integrazione delle terapie tradizionali.
+baseurl: ""
+url: "https://www.insiemeconte.org/"
+
+
+include:
+  - _pages
+  - _assets
+
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - _design/
+
+defaults:
+  - scope:
+      path: "_assets/progetti"
+    values:
+      projects: true

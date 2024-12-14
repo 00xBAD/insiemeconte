@@ -1,0 +1,35 @@
+- icon: fa-phone
+  heading: Sportello Telefonico
+  text: per l'ascolto, l'informazione ed il sostegno immediato.
+
+- icon: fa-comment
+  heading: Colloqui informativi
+  text: in sede, per aiutare ad orientarsi circa le Strutture sanitarie presenti sul territorio.
+
+- icon: fa-users
+  heading: Accoglienza nei GRUPPI di AUTO-AIUTO
+  text: per giovani, adulti e familiari.
+
+- icon: fa-building
+  heading: Assistenza Integrata con i Servizi Pubblici Socio-Sanitari
+  text: per garantire una continuità assistenziale, aumentare il benessere della persona e dei suoi familiari e contrastare eventuali ricadute e ricoveri.
+
+- icon: fa-hospital
+  heading: Sostegno ai Pazienti
+  text: in carico i Servizi Psichiatrici e/o ricoverati in S.P.D.C. sia all'interno della Struttura che una volta dimessi.
+
+- icon: fa-heart
+  heading: Sostegno ad Personam
+  text: sostegno specifico e personalizzato per affrontare un momento particolarmente difficile.
+
+- icon: fa-book-open
+  heading: Corsi di Formazione
+  text: per Volontari della Salute Mentale.
+
+- icon: fa-calendar
+  heading: Progetti, Eventi, seminari
+  text: per la prevenzione e all'approfondimento dei temi legati al disagio mentale e sociale.
+
+- icon: fa-paintbrush
+  heading: Laboratori artistici
+  text: (Teatro, Musica, Disegno, Pittura, etc.)

@@ -1,0 +1,23 @@
+<section id="progetti" class="projects-section section-type-b">
+    <div class="container half">
+
+        <h1 class="atma-semibold black row-1">I Nostri Progetti</h1>
+        <img src="{{ site.url }}/_assets/png/brush-separator-dark.png" class="brush-separator row-2">
+    </div>
+    <div class="container full">
+        <p class="poppins-light black col-1">
+            La nostra associazione promuove progetti di sostegno psicologico destinati a supportare individui e famiglie
+            in momenti di difficoltà emotiva e mentale.</br></br>
+            Offriamo consulenze, gruppi di supporto e attività terapeutiche
+            per favorire il benessere psicologico e migliorare la qualità della vita.
+        </p>
+    </div>
+    <div class="container half">
+        {% assign project_images = site.static_files | where: "projects", true %}
+        {% for project in project_images %}
+        <a class="project-link" href="{{ project.path }}">
+            <img src="{{ project.path }}" class="project-image">
+        </a>
+        {% endfor %}
+    </div>
+</section>

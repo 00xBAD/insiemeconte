@@ -1,0 +1,34 @@
+<section id="servizi" class="services-section section-type-a">
+    <div class="container full">
+
+        <h1 class="atma-semibold black row-1">Cosa Offriamo</h1>
+        <img src="{{ site.url }}/_assets/png/brush-separator-dark.png" class="brush-separator row-2">
+
+        <!-- Free Services -->
+        <h2 class="atma-semibold black-inverted padding-16 border-radius-16 text-center-align">In forma del tutto gratuita:</h1>
+        <div class="container half max-width">
+            {% for service in site.data.freeServices %}
+            <div class="service-container">
+                <div class="service-icon fa {{ service.icon }} dark"></div>
+                <div class="service-heading poppins-bold dark">{{ service.heading }}</div>
+                <div class="service-spacing"></div>
+                <div class="service-description poppins-regular dark">{{ service.text }}</div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Paid Services -->
+        <h2 class="atma-semibold black-inverted padding-16 border-radius-16 text-center-align">A Costi Sociali:</h1>
+        <div class="container half max-width">
+            {% for service in site.data.paidServices %}
+                <div class="service-container">
+                    <div class="service-icon fa {{ service.icon }} dark"></div>
+                    <div class="service-heading poppins-bold dark">{{ service.heading }}</div>
+                    <div class="service-spacing"></div>
+                    <div class="service-description poppins-regular dark">{{ service.text }}</div>
+                </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>

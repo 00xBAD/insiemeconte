@@ -1,0 +1,15 @@
+<header>
+    <div class="container half">
+
+        <a href="{{ site.url }}"><img src="/_assets/png/logotype.png" class="logotype col-1"></a>
+
+        <nav>
+
+            {% for item in site.data.nav %}
+                <a href="{{ item.url }}" class="poppins-medium nav-item black col-2">{{ item.title }}</a>
+            {% endfor %}
+            
+        </nav>
+
+    </div>
+</header>
